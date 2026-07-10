@@ -1,0 +1,168 @@
+.backdrop {
+  position: fixed;
+  padding: 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}
+.modal {
+  position: relative;
+  padding: 52px 24px;
+  width: 100%;
+  height: 100%;
+  max-width: 688px;
+  max-height: 628px;
+  text-align: center;
+  background: var(--text-bg-cl);
+  border: 3px solid var(--border-cl);
+  border-radius: 100px;
+  overflow: hidden;
+  &__btn-close {
+    position: absolute;
+    padding: 0;
+    top: 32px;
+    right: 52px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 44px;
+    margin-bottom: 35px;
+  }
+  &__mono-img {
+    padding: 8px;
+    margin: 0 auto 28px;
+    width: 106px;
+    height: 106px;
+  }
+  &__card-number {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 28px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font: inherit;
+    &:hover::after {
+      content: 'Скопіювати';
+      position: absolute;
+      right: 0;
+      top: -24px;
+      padding: 4px 8px;
+      border-radius: 8px;
+      background: var(--light-accent-cl);
+      color: var(--white-text-cl);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+  }
+  &__jar-link {
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration-line: underline;
+    transition: font-size 0.3s;
+    &:hover {
+      font-size: 26px;
+    }
+  }
+}
+.modal__bubble {
+  position: absolute;
+  user-select: none;
+}
+
+.modal__bubble--thanks {
+  bottom: 110px;
+  right: 120px;
+  z-index: 5;
+  width: 307px;
+  height: 73px;
+  background-image: url('../images/donat/donat-thanks.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/donat/donat-thanks@2x.png');
+  }
+}
+.modal__bubble-text--thanks {
+  position: absolute;
+  padding-left: 24px;
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.modal__bubble--karma {
+  bottom: 31px;
+  left: 65px;
+  z-index: 5;
+  width: 301px;
+  height: 88px;
+  background-image: url('../images/donat/donat-karma.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/donat/donat-karma@2x.png');
+  }
+}
+.modal__bubble-text--karma {
+  position: absolute;
+  padding-left: 65px;
+  padding-top: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.modal__icon {
+  position: absolute;
+}
+.modal__parrot-icon {
+  top: 78px;
+  right: 0;
+  width: 122px;
+  height: 238px;
+}
+.modal__fish-icon {
+  width: 156px;
+  height: 172px;
+  top: -4px;
+  left: 0;
+}
+.modal__dog-icon {
+  width: 227px;
+  height: 310px;
+  bottom: 0;
+  right: 0;
+}
+.modal__cat-icon {
+  width: 200px;
+  height: 233px;
+  bottom: 16px;
+  left: -14px;
+}

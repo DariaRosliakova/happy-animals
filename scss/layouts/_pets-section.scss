@@ -1,0 +1,63 @@
+.pets-section {
+  text-align: center;
+  &__container {
+    position: relative;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    @media screen and (min-width: $bp-tablet) {
+      gap: 122px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      gap: 188px;
+    }
+  }
+  &__paws-1,
+  &__paws-2 {
+    position: absolute;
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+  &__paws-1 {
+    left: 28px;
+    @media screen and (min-width: $bp-tablet) {
+      width: 140px;
+      height: 140px;
+      top: -70px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      width: 196px;
+      height: 196px;
+      top: -100px;
+    }
+  }
+  &__paws-2 {
+    bottom: 12px;
+    z-index: -1;
+    @media screen and (min-width: $bp-tablet) {
+      right: 26px;
+      width: 160px;
+      height: 160px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      right: 76px;
+      width: 220px;
+      height: 220px;
+    }
+  }
+  &__paws--mobile {
+    position: absolute;
+    width: 70px;
+    height: 95px;
+    bottom: -35px;
+    right: 10px;
+    z-index: -1;
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+}

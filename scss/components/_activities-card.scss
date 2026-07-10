@@ -1,0 +1,125 @@
+.activity-card {
+  width: 100%;
+  height: 100%;
+  background: var(--card-bg-cl);
+  padding: 0;
+  perspective: 1000px;
+  border: 2px solid #fbfff7;
+  border-radius: 30px;
+  cursor: pointer;
+  &__inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  &__front,
+  &__back {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    border-radius: 30px;
+    background: var(--card-bg-cl);
+    backface-visibility: hidden;
+  }
+  &__front {
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  &__animation {
+    align-self: center;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    text-align: left;
+    padding: 17px 6px;
+    width: 276px;
+    height: 103px;
+    background: var(--input-bg-cl);
+    border-radius: 0px 5px 5px 0px;
+  }
+  .activities-section__item:nth-child(even) &__text {
+    padding-left: 20px;
+    align-self: flex-end;
+    border-radius: 5px 0 0 5px;
+  }
+  &__back {
+    padding-top: 32px;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  &.is-flipped .activity-card__inner {
+    transform: rotateY(180deg);
+  }
+}
+.activity-card__animation {
+  position: relative;
+  width: 180px;
+  height: 150px;
+}
+
+.activity-card__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.activity-card__img--animated {
+  opacity: 0;
+  animation: activityFrames 1.2s infinite;
+}
+.activity-card__img--static {
+  opacity: 1;
+  animation: none;
+}
+.activity-card__img--2-1,
+.activity-card__img--3-1 {
+  animation-delay: 0s;
+}
+
+.activity-card__img--2-2,
+.activity-card__img--3-2 {
+  animation-delay: 0.4s;
+}
+
+.activity-card__img--2-3,
+.activity-card__img--3-3 {
+  animation-delay: 0.8s;
+}
+@keyframes activityFrames {
+  0%,
+  33.33% {
+    opacity: 1;
+  }
+
+  33.34%,
+  100% {
+    opacity: 0;
+  }
+}
+.activity-card__back {
+  align-items: center;
+}
+.activities-section__item:nth-child(1) .activity-card__animation {
+  width: 212px;
+  height: 152px;
+}
+
+.activities-section__item:nth-child(2) .activity-card__animation,
+.activities-section__item:nth-child(3) .activity-card__animation {
+  width: 122px;
+  height: 152px;
+}

@@ -1,0 +1,41 @@
+.team-card {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 226px;
+  height: 330px;
+  border-radius: 30px;
+  overflow: hidden;
+  justify-content: flex-end;
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 326px;
+    height: 430px;
+  }
+
+  &__photo {
+    object-position: center top;
+    height: 67.5%;
+    @media screen and (min-width: $bp-tablet) {
+      height: 73.5%;
+    }
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 3.5px 3.5px;
+    height: 32.5%;
+    background: var(--text-bg-cl);
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: $bp-tablet) {
+      height: 26.5%;
+      font-size: 14px;
+      line-height: 1.25;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      padding: 8px 8px;
+      font-size: 16px;
+    }
+  }
+}

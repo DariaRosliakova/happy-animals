@@ -1,0 +1,56 @@
+.mobile-menu {
+  position: fixed;
+  padding: 116px 24px 63px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-background-cl);
+  transform: translateX(100%);
+  transition: transform 0.2s;
+  &.is-open {
+    transform: translateX(0);
+  }
+  &__btn-close {
+    position: absolute;
+    padding: 0;
+    top: 64px;
+    right: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    &-icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &__language {
+    margin-left: -8px;
+  }
+  &__language-btn {
+    padding: 8px;
+    color: var(--primary-text-cl);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 24px;
+    transition: color 0.3s;
+    &:hover {
+      color: var(--dark-accent-cl);
+    }
+  }
+  &__language-btn.is-active {
+    color: var(--dark-accent-cl);
+    font-weight: 600;
+  }
+  &__link {
+    font-size: 14px;
+    margin-bottom: 24px;
+    transition: color 0.3s;
+    &:hover {
+      color: var(--dark-accent-cl);
+    }
+  }
+}

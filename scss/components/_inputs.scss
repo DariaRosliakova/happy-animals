@@ -1,0 +1,83 @@
+.input {
+  width: 100%;
+  background: var(--input-bg-cl);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--primary-text-cl);
+}
+
+.footer__label-text {
+  position: absolute;
+  left: 16px;
+  top: 37%;
+  transform: translateY(-50%);
+  color: var(--input-text-cl);
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input:hover,
+.input:focus,
+.input:not(:placeholder-shown) {
+  background: var(--secondary-background-cl);
+}
+
+.input:focus + .footer__label-text,
+.input:not(:placeholder-shown) + .footer__label-text {
+  top: -8px;
+  transform: translateY(0);
+}
+.footer__phone-prefix {
+  position: absolute;
+  left: 16px;
+  top: 37%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+.footer__field--phone:focus-within .footer__phone-prefix,
+.footer__field--phone
+  .footer__input:not(:placeholder-shown)
+  ~ .footer__phone-prefix {
+  opacity: 1;
+}
+
+.footer__field--phone .footer__input {
+  padding-left: 50px;
+}
+.footer {
+  &__field {
+    position: relative;
+    display: block;
+  }
+  &__input {
+    padding: 15px 16px;
+    height: 46px;
+    transition: 0.3s;
+  }
+  &__textarea {
+    padding: 28px 16px 12px;
+    resize: vertical;
+    min-height: 62px;
+    max-height: 200px;
+    overflow-wrap: break-word;
+  }
+  &__input::placeholder,
+  &__textarea::placeholder {
+    color: var(--input-text-cl);
+  }
+  &__input:-webkit-autofill,
+  &__input:-webkit-autofill:hover,
+  &__input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--primary-text-cl);
+    -webkit-box-shadow: 0 0 0 1000px var(--secondary-background-cl) inset;
+  }
+}

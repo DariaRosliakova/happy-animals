@@ -1,0 +1,31 @@
+.activities-section {
+  &__container {
+    position: relative;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 302px;
+    height: 337px;
+  }
+  &__paws-1,
+  &__paws-2 {
+    position: absolute;
+  }
+  &__paws-1 {
+    bottom: 118px;
+    left: 50%;
+    transform: translate(-276px);
+    width: 130px;
+    height: 130px;
+  }
+  &__paws-2 {
+    bottom: -20px;
+    left: 50%;
+    transform: translate(142px);
+    width: 140px;
+    height: 140px;
+  }
+}

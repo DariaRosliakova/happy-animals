@@ -1,0 +1,121 @@
+.footer {
+  position: relative;
+  padding: 56px 0 100px;
+  &::before {
+    position: absolute;
+    width: 292px;
+    height: 222px;
+    content: '';
+    left: 35%;
+    bottom: 0;
+    background-image: url('../images/animals-footer.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/animals-footer@2x.png');
+    }
+  }
+  &__container {
+    position: relative;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  &__contacts-item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  &__contacts-icon {
+    width: 32px;
+    height: 32px;
+  }
+  &__socials {
+    display: flex;
+    gap: 24px;
+  }
+  &__socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--light-accent-cl);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: var(--dark-accent-cl);
+    }
+  }
+  &__socials-icon {
+    width: 28px;
+    height: 28px;
+  }
+  &__payment {
+    text-align: center;
+  }
+  &__mono-img {
+    padding: 8px;
+    margin: 0 auto 24px;
+  }
+  &__card-number {
+    margin-bottom: 24px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font: inherit;
+    &:hover::after {
+      content: 'Скопіювати';
+      position: absolute;
+      right: 0;
+      top: -24px;
+      padding: 4px 8px;
+      border-radius: 8px;
+      background: var(--light-accent-cl);
+      color: var(--white-text-cl);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+  }
+  &__jar-link {
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration-line: underline;
+    transition: font-size 0.3s;
+    &:hover {
+      font-size: 26px;
+    }
+  }
+  &__form {
+    width: 411px;
+  }
+  &__form-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  &__paws-icon {
+    position: absolute;
+    bottom: -40px;
+    left: 159px;
+    width: 176px;
+    height: 119px;
+  }
+}

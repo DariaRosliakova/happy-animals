@@ -1,0 +1,19 @@
+.team-section {
+  &__container {
+    position: relative;
+  }
+  &__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+    margin: 0;
+    gap: 20px;
+  }
+  &__content {
+    overflow: hidden;
+  }
+  &__list {
+    display: flex;
+  }
+}

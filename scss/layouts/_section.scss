@@ -1,0 +1,9 @@
+.section {
+  padding: 28px 0 32px;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 40px 0 44px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    padding: 56px 0 56px;
+  }
+}
