@@ -1,11 +1,4 @@
 .hero-section {
-  padding-bottom: 14px;
-  @media screen and (min-width: $bp-tablet) {
-    padding-bottom: 32px;
-  }
-  @media screen and (min-width: $bp-desktop) {
-    padding-bottom: 52px;
-  }
   &__container {
     position: relative;
     min-height: 324px;

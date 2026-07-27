@@ -45,8 +45,11 @@
   }
   &__title {
     font-weight: 600;
-    font-size: 44px;
+    font-size: 40px;
     margin-bottom: 35px;
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 44px;
+    }
   }
   &__mono-img {
     padding: 8px;
@@ -62,9 +65,9 @@
     border: none;
     background: transparent;
     cursor: pointer;
-    font: inherit;
+
     &:hover::after {
-      content: 'Скопіювати';
+      content: attr(data-tooltip);
       position: absolute;
       right: 0;
       top: -24px;
@@ -81,9 +84,14 @@
     font-size: 24px;
     text-decoration-line: underline;
     transition: font-size 0.3s;
+    margin-bottom: 16px;
     &:hover {
       font-size: 26px;
     }
+  }
+  &__comment {
+    font-weight: 300;
+    font-size: 18px;
   }
 }
 .modal__bubble {
@@ -108,7 +116,7 @@
 }
 .modal__bubble-text--thanks {
   position: absolute;
-  padding-left: 24px;
+  padding-left: 20px;
   padding-top: 22px;
   display: flex;
   align-items: center;

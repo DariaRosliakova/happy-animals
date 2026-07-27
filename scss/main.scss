@@ -11,12 +11,13 @@
 @import './components/help-card';
 @import './components/inputs';
 @import './components/links';
+@import './components/paginations';
 @import './components/pets-card';
 @import './components/team-card';
 
+@import './layouts/container';
 @import './layouts/about-section';
 @import './layouts/activities-section';
-@import './layouts/container';
 @import './layouts/footer';
 @import './layouts/header';
 @import './layouts/help-section';

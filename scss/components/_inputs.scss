@@ -4,43 +4,71 @@
   border-radius: 30px;
   border: none;
   outline: none;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-weight: 500;
-  font-size: 14px;
   color: var(--primary-text-cl);
+  font-size: 12px;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
 }
 
 .footer__label-text {
   position: absolute;
+  font-weight: 500;
   left: 16px;
   top: 37%;
   transform: translateY(-50%);
   color: var(--input-text-cl);
-  font-size: 14px;
+  font-size: 12px;
   pointer-events: none;
   transition: 0.3s;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 14px;
+  }
 }
-
+.footer__label-textarea {
+  top: 50%;
+}
 .input:hover,
 .input:focus,
-.input:not(:placeholder-shown) {
+.input:not(:placeholder-shown),
+.footer__textarea-wrapper:hover,
+.footer__field:focus-within .footer__textarea-wrapper,
+.footer__field--filled .footer__textarea-wrapper {
+  //????????
   background: var(--secondary-background-cl);
 }
 
 .input:focus + .footer__label-text,
-.input:not(:placeholder-shown) + .footer__label-text {
-  top: -8px;
-  transform: translateY(0);
+.input:not(:placeholder-shown) + .footer__label-text,
+.footer__field:focus-within .footer__label-textarea,
+.footer__field--filled .footer__label-textarea {
+  display: none;
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+    transform: translateY(0);
+    top: -8px;
+  }
 }
+
 .footer__phone-prefix {
   position: absolute;
   left: 16px;
-  top: 37%;
   transform: translateY(-50%);
   opacity: 0;
   transition: opacity 0.3s;
   pointer-events: none;
-  font-size: 14px;
+  font-size: 12px;
+  top: 38%;
+  @media screen and (min-width: $bp-tablet) {
+    top: 37%;
+    font-size: 14px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    top: 38%;
+  }
 }
 
 .footer__field--phone:focus-within .footer__phone-prefix,
@@ -51,7 +79,10 @@
 }
 
 .footer__field--phone .footer__input {
-  padding-left: 50px;
+  padding-left: 45px;
+  @media screen and (min-width: $bp-tablet) {
+    padding-left: 50px;
+  }
 }
 .footer {
   &__field {
@@ -59,16 +90,52 @@
     display: block;
   }
   &__input {
-    padding: 15px 16px;
-    height: 46px;
+    padding: 10px 16px;
     transition: 0.3s;
+    height: 33px;
+    @media screen and (min-width: $bp-tablet) {
+      padding: 15px 16px;
+      height: 40px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      height: 46px;
+    }
+  }
+  &__textarea-wrapper {
+    display: block;
+    width: 100%;
+    padding: 22px 16px;
+    margin-bottom: 12px;
+    background: var(--input-bg-cl);
+    border-radius: 30px;
+    min-height: 57px;
+    transition: background-color 0.3s ease;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 16px;
+      min-height: 62px;
+    }
   }
   &__textarea {
-    padding: 28px 16px 12px;
-    resize: vertical;
-    min-height: 62px;
-    max-height: 200px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    --max-height: 140px;
+    max-height: var(--max-height);
+    resize: none;
+    overflow-y: auto;
+    color: var(--primary-text-cl);
+    font-size: 12px;
     overflow-wrap: break-word;
+    @media screen and (min-width: $bp-tablet) {
+      --max-height: 180px;
+      font-size: 14px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      --max-height: 200px;
+    }
   }
   &__input::placeholder,
   &__textarea::placeholder {

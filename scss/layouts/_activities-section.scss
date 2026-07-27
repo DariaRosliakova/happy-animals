@@ -1,18 +1,51 @@
 .activities-section {
   &__container {
     position: relative;
+    max-width: 228px;
+    @media screen and (min-width: $bp-mobile) {
+      max-width: 424px;
+    }
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 712px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 1288px;
+    }
+  }
+  &__content {
+    overflow: hidden;
+    @media screen and (min-width: $bp-desktop) {
+      overflow: visible;
+    }
   }
   &__list {
     display: flex;
-    justify-content: space-between;
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: space-between;
+    }
   }
   &__item {
-    width: 302px;
-    height: 337px;
+    width: 180px;
+    height: 208px;
+    @media screen and (min-width: $bp-tablet) {
+      width: 302px;
+      height: 337px;
+    }
+  }
+  &__slide {
+    @media screen and (min-width: $bp-desktop) {
+      flex: 0 0 302px;
+      width: 302px;
+      height: 337px;
+    }
   }
   &__paws-1,
   &__paws-2 {
+    display: none;
     position: absolute;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
   }
   &__paws-1 {
     bottom: 118px;

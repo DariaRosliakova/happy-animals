@@ -27,6 +27,7 @@
                 src="./images/logo.png"
                 srcset="./images/logo@2x.png 2x"
                 alt="Логотип громадської організації Happy animals UA"
+                data-lang-alt="header.logo.alt"
               />
             </a>
             <ul class="header__menu">
@@ -34,6 +35,7 @@
                 <a
                   class="header__menu-link link"
                   href="./index.html#about-section"
+                  data-lang="header.menu.about"
                   >Про нас</a
                 >
               </li>
@@ -41,6 +43,7 @@
                 <a
                   class="header__menu-link link"
                   href="./index.html#team-section"
+                  data-lang="header.menu.team"
                   >Команда</a
                 >
               </li>
@@ -48,6 +51,7 @@
                 <a
                   class="header__menu-link link"
                   href="./index.html#pets-section"
+                  data-lang="header.menu.pets"
                   >Улюбленці</a
                 >
               </li>
@@ -55,6 +59,7 @@
                 <a
                   class="header__menu-link link"
                   href="./index.html#help-section"
+                  data-lang="header.menu.help"
                   >Допомога</a
                 >
               </li>
@@ -62,20 +67,34 @@
                 <a
                   class="header__menu-link link"
                   href="./index.html#activities-section"
+                  data-lang="header.menu.activities"
                   >Наша робота</a
                 >
               </li>
               <li>
-                <a class="header__menu-link link" href="./index.html#footer"
+                <a
+                  class="header__menu-link link"
+                  href="./index.html#footer"
+                  data-lang="header.menu.contacts"
                   >Контакти</a
                 >
               </li>
             </ul>
             <div class="header__language">
-              <button type="button" class="header__language-btn is-active">
+              <button
+                type="button"
+                class="header__language-btn is-active"
+                data-language="ua"
+              >
                 UA
               </button>
-              <button type="button" class="header__language-btn">EN</button>
+              <button
+                type="button"
+                class="header__language-btn"
+                data-language="en"
+              >
+                EN
+              </button>
             </div>
             <button class="header__burger menu-btn-open" type="button">
               <svg class="header__burger-icon">
@@ -94,22 +113,34 @@
       </button>
       <ul class="mobile-menu__list">
         <li>
-          <a class="mobile-menu__link link" href="./index.html#about-section"
+          <a
+            class="mobile-menu__link link"
+            href="./index.html#about-section"
+            data-lang="header.menu.about"
             >Про нас</a
           >
         </li>
         <li>
-          <a class="mobile-menu__link link" href="./index.html#team-section"
+          <a
+            class="mobile-menu__link link"
+            href="./index.html#team-section"
+            data-lang="header.menu.team"
             >Команда</a
           >
         </li>
         <li>
-          <a class="mobile-menu__link link" href="./index.html#pets-section"
+          <a
+            class="mobile-menu__link link"
+            href="./index.html#pets-section"
+            data-lang="header.menu.pets"
             >Улюбленці</a
           >
         </li>
         <li>
-          <a class="mobile-menu__link link" href="./index.html#help-section"
+          <a
+            class="mobile-menu__link link"
+            href="./index.html#help-section"
+            data-lang="header.menu.help"
             >Допомога</a
           >
         </li>
@@ -117,27 +148,41 @@
           <a
             class="mobile-menu__link link"
             href="./index.html#activities-section"
+            data-lang="header.menu.activities"
             >Наша робота</a
           >
         </li>
         <li>
-          <a class="mobile-menu__link link" href="./index.html#footer"
+          <a
+            class="mobile-menu__link link"
+            href="./index.html#footer"
+            data-lang="header.menu.contacts"
             >Контакти</a
           >
         </li>
       </ul>
       <div class="mobile-menu__language">
-        <button type="button" class="mobile-menu__language-btn is-active">
+        <button
+          type="button"
+          class="mobile-menu__language-btn is-active"
+          data-language="ua"
+        >
           UA
         </button>
-        <button type="button" class="mobile-menu__language-btn">EN</button>
+        <button
+          type="button"
+          class="mobile-menu__language-btn"
+          data-language="en"
+        >
+          EN
+        </button>
       </div>
     </div>
     <main>
       <section class="hero-section">
         <div class="hero-section__container container">
           <div class="hero-section__content">
-            <h1 class="hero-section__title">
+            <h1 class="hero-section__title" data-lang="hero.title">
               Громадська організація "Happy animals UA"
             </h1>
             <div class="hero-section__sidebar">
@@ -192,27 +237,35 @@
               src="./images/hero/hero-main-photo.png"
               srcset="./images/hero/hero-main-photo@2x.png 2x"
               alt="Сірий кіт і золотистий ретривер"
+              data-lang-alt="hero.image.alt"
             />
             <button
               class="donate-button modal-btn-open hero-section__button"
               type="button"
+              data-lang="donate.button"
             >
               Донат
             </button>
           </div>
         </div>
       </section>
-      <section class="about-section" id="about-section">
+      <section class="about-section section" id="about-section">
         <div class="about-section__container container">
-          <h2 class="about-section__title title">Про нас</h2>
+          <h2 class="about-section__title title" data-lang="about.title">
+            Про нас
+          </h2>
           <div class="about-section__grid">
             <img
               class="about-section__media about-section__media--1"
               src="./images/about/about-1.jpg"
               srcset="./images/about/about-1@2x.jpg 2x"
               alt="Собака в червоній жилетці сидить на вулиці"
+              data-lang-alt="about.image1.alt"
             />
-            <p class="about-section__text about-section__text--1">
+            <p
+              class="about-section__text about-section__text--1"
+              data-lang="about.text1"
+            >
               Ми є тимчасовою перетримкою для безхатніх тварин після їх
               стерилізації, а також для хворих безпритульних тварин. Наша
               команда складається переважно з жінок, які, окрім волонтерства,
@@ -220,18 +273,27 @@
               без державної фінансової підтримки й залежить від праці волонтерів
               та допомоги небайдужих людей.
             </p>
-            <p class="about-section__note about-section__note--1">
+            <p
+              class="about-section__note about-section__note--1"
+              data-lang="about.note1"
+            >
               Нерідко люди незаконно підкидають цуценят і кошенят. Поодинокі
               собаки та коти, які залишилися без родини через наслідки війни,
               також потрапляють до нашої перетримки.
             </p>
-            <p class="about-section__text about-section__text--2">
+            <p
+              class="about-section__text about-section__text--2"
+              data-lang="about.text2"
+            >
               У центрі перебуває понад 60 собак і десятки котів. Ще сотні тварин
               знаходяться на домашніх перетримках у волонтерів. Також ми
               піклуємося про вуличних собак і котів, тож кількість тварин, яким
               ми допомагаємо, є дуже великою.
             </p>
-            <p class="about-section__note about-section__note--2">
+            <p
+              class="about-section__note about-section__note--2"
+              data-lang="about.note2"
+            >
               НАША МЕТА - знайти гідний дім кожній тваринці, яка перебуває на
               тимчасовій перетримці, а також проводити стерилізацію безхатніх
               тварин.
@@ -241,18 +303,21 @@
               src="./images/about/about-2.jpg"
               srcset="./images/about/about-2@2x.jpg 2x"
               alt="Триколірне кошеня визирає з-за дверей"
+              data-lang-alt="about.image2.alt"
             />
             <img
               class="about-section__media about-section__media--3"
               src="./images/about/about-3.jpg"
               srcset="./images/about/about-3@2x.jpg 2x"
               alt="Волонтери спілкуються та доглядають собак у притулку"
+              data-lang-alt="about.image3.alt"
             />
             <img
               class="about-section__media about-section__media--4"
               src="./images/about/about-4.jpg"
               srcset="./images/about/about-4@2x.jpg 2x"
               alt="Собаки у вольєрі притулку"
+              data-lang-alt="about.image4.alt"
             />
           </div>
           <svg class="about-section__paws-icon">
@@ -265,14 +330,14 @@
       </section>
       <section class="team-section section" id="team-section">
         <div class="container">
-          <h2 class="title">Наша команда</h2>
+          <h2 class="title" data-lang="team.title">Наша команда</h2>
           <div class="team-section__slider">
             <button class="carousel-btn prev" type="button">
               <svg class="carousel-btn__arrow">
                 <use href="./images/icons.svg#arrow-slider"></use>
               </svg>
             </button>
-            <div class="team-section__content swiper-container">
+            <div class="team-section__content team-swiper">
               <ul class="team-section__list swiper-wrapper">
                 <li class="swiper-slide">
                   <div class="team-card">
@@ -281,9 +346,10 @@
                       src="./images/team/team-1.jpg"
                       srcset="./images/team/team-1@2x.jpg 2x"
                       alt="Дівчина тримає маленького цуценя"
+                      data-lang-alt="team.image1.alt"
                     />
                     <p class="team-card__text">
-                      <span
+                      <span data-lang="team.text1" data-html
                         ><strong>Вікторія Афонасенко</strong> - займається
                         відловом для стерилізації, пошуком нових людей та
                         спонсорів. Має дві собаки.</span
@@ -298,9 +364,10 @@
                       src="./images/team/team-2.jpg"
                       srcset="./images/team/team-2@2x.jpg 2x"
                       alt="Дівчина обіймає собаку"
+                      data-lang-alt="team.image2.alt"
                     />
                     <p class="team-card__text">
-                      <span>
+                      <span data-lang="team.text2" data-html>
                         <strong>Діана Велика</strong> - інформаційний волонтер.
                         Допомагає вести інстаграм, прибирати, відловлювати. Має
                         три безпородні собаки.</span
@@ -315,9 +382,10 @@
                       src="./images/team/team-3.jpg"
                       srcset="./images/team/team-3@2x.jpg 2x"
                       alt="Жінка тримає чорного цуценя"
+                      data-lang-alt="team.image3.alt"
                     />
                     <p class="team-card__text">
-                      <span
+                      <span data-lang="team.text3" data-html
                         ><strong>Вікторія Вієнко</strong> - інформаційний
                         волонтер та собаче таксі, відлов для стерилізації. Шукає
                         нових спонсорів та родини тваринам.</span
@@ -332,9 +400,10 @@
                       src="./images/team/team-4.jpg"
                       srcset="./images/team/team-4@2x.jpg 2x"
                       alt="Волонтерка обіймає чорну собаку"
+                      data-lang-alt="team.image4.alt"
                     />
                     <p class="team-card__text">
-                      <span>
+                      <span data-lang="team.text4" data-html>
                         <strong>Лідія Василівна</strong> - волонтерка .
                         Допомагає прибирати та робити процедури хворим тваринам.
                         Прихистила чотири собаки.</span
@@ -349,9 +418,10 @@
                       src="./images/team/team-5.jpg"
                       srcset="./images/team/team-5@2x.jpg 2x"
                       alt="Чоловік на території притулку"
+                      data-lang-alt="team.image5.alt"
                     />
                     <p class="team-card__text">
-                      <span
+                      <span data-lang="team.text5" data-html
                         ><strong>Віталій Анатолійович</strong> - волонтер -
                         майстер. Побудував всі будки та вольєри. Інколи,
                         допомогає іншим волонтерам прибирати.</span
@@ -366,9 +436,10 @@
                       src="./images/team/team-6.jpg"
                       srcset="./images/team/team-6@2x.jpg 2x"
                       alt="Дівчина тримає кота"
+                      data-lang-alt="team.image6.alt"
                     />
                     <p class="team-card__text">
-                      <span
+                      <span data-lang="team.text6" data-html
                         ><strong>Марія</strong> - волонтер, журналістка.
                         Допомагає прибирати декілька разів на тиждень. Має двох
                         кішечок, яких врятувала.</span
@@ -388,7 +459,7 @@
       </section>
       <section class="pets-section section" id="pets-section">
         <div class="container pets-section__container">
-          <h2 class="title">Обери улюбленця</h2>
+          <h2 class="title" data-lang="pets.title">Обери улюбленця</h2>
           <ul class="pets-section__list">
             <li>
               <a class="pets-card link" href="">
@@ -397,10 +468,12 @@
                   src="./images/pets/pets-dog.png"
                   srcset="./images/pets/pets-dog@2x.png 2x"
                   alt="Мордочка білого собаки крупним планом"
+                  data-lang-alt="pets.image1.alt"
                 />
                 <span class="pets-card__overlay">
                   <span class="pets-card__text"
-                    ><span>Більше</span> <span>собачок</span></span
+                    ><span data-lang="pets.more">Більше</span>
+                    <span data-lang="pets.dogs">собачок</span></span
                   >
                 </span></a
               >
@@ -412,11 +485,12 @@
                   src="./images/pets/pets-cat.png"
                   srcset="./images/pets/pets-cat@2x.png 2x"
                   alt="Біло-рудий кіт"
+                  data-lang-alt="pets.image2.alt"
                 />
                 <span class="pets-card__overlay">
                   <span class="pets-card__text">
-                    <span>Більше</span>
-                    <span>котиків</span></span
+                    <span data-lang="pets.more">Більше</span>
+                    <span data-lang="pets.cats">котиків</span></span
                   >
                 </span></a
               >
@@ -435,75 +509,106 @@
       </section>
       <section class="help-section section" id="help-section">
         <div class="container help-section__container">
-          <h2 class="title">Чим нам допомогти</h2>
+          <h2 class="title" data-lang="help.title">Чим нам допомогти</h2>
+
           <ul class="help-section__list">
             <li class="help-section__item">
               <div class="help-card help-card--finance">
                 <div class="help-card__inner">
-                  <div class="help-card__front">Фінанси</div>
+                  <div class="help-card__front" data-lang="help.finance.title">
+                    Фінанси
+                  </div>
+
                   <div class="help-card__back">
                     <ul class="help-card__back-list">
-                      <li>Оплата стерилізацій та лікування хворих</li>
-                      <li>Закупівля кормів</li>
-                      <li>Заробітна плата двом працівникам</li>
-                      <li>Оплата оренди приміщення та комунальних послуг </li>
+                      <li data-lang="help.finance.item1">
+                        Оплата стерилізацій та лікування хворих
+                      </li>
+                      <li data-lang="help.finance.item2">Закупівля кормів</li>
+                      <li data-lang="help.finance.item3">
+                        Заробітна плата двом працівникам
+                      </li>
+                      <li data-lang="help.finance.item4">
+                        Оплата оренди приміщення та комунальних послуг
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </li>
+
             <li class="help-section__item">
               <div class="help-card help-card--food">
                 <div class="help-card__inner">
-                  <div class="help-card__front">Корми</div>
+                  <div class="help-card__front" data-lang="help.food.title">
+                    Корми
+                  </div>
+
                   <div class="help-card__back">
                     <ul class="help-card__back-list">
-                      <li>600 кг кормів собачих</li>
-                      <li>60 кг корму для цуценят</li>
-                      <li>40 кг корму для котів</li>
-                      <li>+корми на допомогу</li>
+                      <li data-lang="help.food.item1">600 кг кормів собачих</li>
+                      <li data-lang="help.food.item2">
+                        60 кг корму для цуценят
+                      </li>
+                      <li data-lang="help.food.item3">40 кг корму для котів</li>
+                      <li data-lang="help.food.item4">+ корми на допомогу</li>
                     </ul>
                   </div>
                 </div>
               </div>
             </li>
+
             <li class="help-section__item">
               <div class="help-card help-card--needs">
                 <div class="help-card__inner">
-                  <div class="help-card__front">Додаткові потреби</div>
+                  <div class="help-card__front" data-lang="help.needs.title">
+                    Додаткові потреби
+                  </div>
+
                   <div class="help-card__back">
                     <ul class="help-card__back-list">
-                      <li>Пелюшки одноразові </li>
-                      <li>Дезинфікуючі засоби</li>
-                      <li>Одноразові рукавички</li>
-                      <li>Бахіли</li>
-                      <li>Одноразові халати</li>
+                      <li data-lang="help.needs.item1">Пелюшки одноразові</li>
+                      <li data-lang="help.needs.item2">Дезинфікуючі засоби</li>
+                      <li data-lang="help.needs.item3">Одноразові рукавички</li>
+                      <li data-lang="help.needs.item4">Бахіли</li>
+                      <li data-lang="help.needs.item5">Одноразові халати</li>
                     </ul>
                   </div>
                 </div>
               </div>
             </li>
+
             <li class="help-section__item">
               <div class="help-card help-card--season">
                 <div class="help-card__inner">
-                  <div class="help-card__front">Сезонні потреби</div>
+                  <div class="help-card__front" data-lang="help.season.title">
+                    Сезонні потреби
+                  </div>
+
                   <div class="help-card__back">
                     <ul class="help-card__back-list">
-                      <li>Будки</li>
-                      <li>Дрова</li>
-                      <li>Солома</li>
-                      <li>Теплі речі</li>
+                      <li data-lang="help.season.item1">Будки</li>
+                      <li data-lang="help.season.item2">Дрова</li>
+                      <li data-lang="help.season.item3">Солома</li>
+                      <li data-lang="help.season.item4">Теплі речі</li>
                     </ul>
                   </div>
                 </div>
               </div>
             </li>
+
             <li class="help-section__item">
               <div class="help-card help-card--volunteers">
                 <div class="help-card__inner">
-                  <div class="help-card__front">Волонтери</div>
+                  <div
+                    class="help-card__front"
+                    data-lang="help.volunteers.title"
+                  >
+                    Волонтери
+                  </div>
+
                   <div class="help-card__back">
-                    <p>
+                    <p data-lang="help.volunteers.text">
                       Потребуємо інформаційних волонтерів та волонтерів для
                       догляду за тваринами.
                     </p>
@@ -511,135 +616,194 @@
                 </div>
               </div>
             </li>
+
             <li class="help-section__item">
               <div class="help-card help-card--love">
                 <div class="help-card__inner">
-                  <div class="help-card__front">Своєю любов’ю</div>
+                  <div class="help-card__front" data-lang="help.love.title">
+                    Своєю любов’ю
+                  </div>
+
                   <div class="help-card__back">
                     <img
                       class="help-card__back-img"
                       src="./images/help/help-1.jpg"
                       srcset="./images/help/help-1@2x.jpg 2x"
                       alt="Людина гладить собаку"
+                      data-lang-alt="help.love.image.alt"
                     />
+
                     <img
                       class="help-card__back-img--mobile"
                       src="./images/help/help--mobile.jpg"
                       srcset="./images/help/help--mobile@2x.jpg 2x"
                       alt="Людина гладить собаку"
+                      data-lang-alt="help.love.image.alt"
                     />
                   </div>
                 </div>
               </div>
             </li>
           </ul>
+
           <button
             class="donate-button modal-btn-open help-section__button"
             type="button"
+            data-lang="donate.button"
           >
             Донат
           </button>
+
           <svg class="help-section__paws--mobile">
             <use href="./images/icons.svg#help-paws--mobile"></use>
           </svg>
         </div>
       </section>
-      <!-- <section class="activities-section section" id="activities-section">
+      <section class="activities-section section" id="activities-section">
         <div class="container activities-section__container">
-          <h2 class="title">Що ми робимо</h2>
-          <ul class="activities-section__list">
-            <li class="activities-section__item">
-              <button class="activity-card" type="button">
-                <div class="activity-card__inner">
-                  <div class="activity-card__front">Тиць</div>
-                  <div class="activity-card__back">
-                    <span class="activity-card__animation">
-                      <svg
-                        class="activity-card__img activity-card__img--static activity-card__img--1"
-                      >
-                        <use href="./images/icons.svg#activities-1"></use>
-                      </svg>
-                    </span>
-                    <span class="activity-card__text">
-                      Щомісячно допомагаємо кормами зоо-волонтерам вмістом 50 кг
-                      -100 кг 
-                    </span>
-                  </div>
-                </div>
-              </button>
-            </li>
-            <li class="activities-section__item">
-              <button class="activity-card" type="button">
-                <span class="activity-card__inner">
-                  <span class="activity-card__front"> Тиць </span>
-                  <span class="activity-card__back">
-                    <span class="activity-card__animation">
-                      <svg
-                        class="activity-card__img activity-card__img--animated activity-card__img--2-1"
-                      >
-                        <use href="./images/icons.svg#activities-2-1"></use>
-                      </svg>
-                      <svg
-                        class="activity-card__img activity-card__img--animated activity-card__img--2-2"
-                      >
-                        <use href="./images/icons.svg#activities-2-2"></use>
-                      </svg>
-                      <svg
-                        class="activity-card__img activity-card__img--animated activity-card__img--2-3"
-                      >
-                        <use href="./images/icons.svg#activities-2-3"></use>
-                      </svg>
-                    </span>
+          <h2 class="title" data-lang="activities.title">Що ми робимо</h2>
 
-                    <span class="activity-card__text">
-                      За рік стерилізуємо, приблизно, 100 тварин
-                    </span>
-                  </span>
-                </span>
-              </button>
-            </li>
-            <li class="activities-section__item">
-              <button class="activity-card" type="button">
-                <span class="activity-card__inner">
-                  <span class="activity-card__front"> Тиць </span>
-                  <span class="activity-card__back">
-                    <span class="activity-card__animation">
-                      <svg
-                        class="activity-card__img activity-card__img--animated activity-card__img--3-1"
+          <div class="activities-section__content activities-swiper">
+            <ul class="activities-section__list swiper-wrapper">
+              <li class="swiper-slide activities-section__slide">
+                <div class="activities-section__item">
+                  <button class="activity-card" type="button">
+                    <span class="activity-card__inner">
+                      <span
+                        class="activity-card__front"
+                        data-lang="activities.card.front"
                       >
-                        <use href="./images/icons.svg#activities-3-1"></use>
-                      </svg>
-                      <svg
-                        class="activity-card__img activity-card__img--animated activity-card__img--3-2"
-                      >
-                        <use href="./images/icons.svg#activities-3-2"></use>
-                      </svg>
-                      <svg
-                        class="activity-card__img activity-card__img--animated activity-card__img--3-3"
-                      >
-                        <use href="./images/icons.svg#activities-3-3"></use>
-                      </svg>
+                        Тиць
+                      </span>
+
+                      <span class="activity-card__back">
+                        <span class="activity-card__animation">
+                          <svg
+                            class="activity-card__img activity-card__img--static activity-card__img--1"
+                          >
+                            <use href="./images/icons.svg#activities-1"></use>
+                          </svg>
+                        </span>
+
+                        <span
+                          class="activity-card__text"
+                          data-lang="activities.card1.text"
+                        >
+                          Щомісяця допомагаємо зооволонтерам кормом обсягом від
+                          50 до 100 кг
+                        </span>
+                      </span>
                     </span>
-                    <span class="activity-card__text">
-                      За рік прилаштовуємо, приблизно, 70 тварин
+                  </button>
+                </div>
+              </li>
+
+              <li class="swiper-slide activities-section__slide">
+                <div class="activities-section__item">
+                  <button class="activity-card" type="button">
+                    <span class="activity-card__inner">
+                      <span
+                        class="activity-card__front"
+                        data-lang="activities.card.front"
+                      >
+                        Тиць
+                      </span>
+
+                      <span class="activity-card__back">
+                        <span class="activity-card__animation">
+                          <svg
+                            class="activity-card__img activity-card__img--animated activity-card__img--2-1"
+                          >
+                            <use href="./images/icons.svg#activities-2-1"></use>
+                          </svg>
+
+                          <svg
+                            class="activity-card__img activity-card__img--animated activity-card__img--2-2"
+                          >
+                            <use href="./images/icons.svg#activities-2-2"></use>
+                          </svg>
+
+                          <svg
+                            class="activity-card__img activity-card__img--animated activity-card__img--2-3"
+                          >
+                            <use href="./images/icons.svg#activities-2-3"></use>
+                          </svg>
+                        </span>
+
+                        <span
+                          class="activity-card__text"
+                          data-lang="activities.card2.text"
+                        >
+                          Щороку стерилізуємо близько 100 тварин
+                        </span>
+                      </span>
                     </span>
-                  </span>
-                </span>
-              </button>
-            </li>
-          </ul>
+                  </button>
+                </div>
+              </li>
+
+              <li class="swiper-slide activities-section__slide">
+                <div class="activities-section__item">
+                  <button class="activity-card" type="button">
+                    <span class="activity-card__inner">
+                      <span
+                        class="activity-card__front"
+                        data-lang="activities.card.front"
+                      >
+                        Тиць
+                      </span>
+
+                      <span class="activity-card__back">
+                        <span class="activity-card__animation">
+                          <svg
+                            class="activity-card__img activity-card__img--animated activity-card__img--3-1"
+                          >
+                            <use href="./images/icons.svg#activities-3-1"></use>
+                          </svg>
+
+                          <svg
+                            class="activity-card__img activity-card__img--animated activity-card__img--3-2"
+                          >
+                            <use href="./images/icons.svg#activities-3-2"></use>
+                          </svg>
+
+                          <svg
+                            class="activity-card__img activity-card__img--animated activity-card__img--3-3"
+                          >
+                            <use href="./images/icons.svg#activities-3-3"></use>
+                          </svg>
+                        </span>
+
+                        <span
+                          class="activity-card__text"
+                          data-lang="activities.card3.text"
+                        >
+                          За рік допомагаємо знайти дім близько 70 тваринам
+                        </span>
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+
+            <div class="pagination"></div>
+          </div>
+
           <svg class="activities-section__paws-1">
             <use href="./images/icons.svg#activities-paws-1"></use>
           </svg>
+
           <svg class="activities-section__paws-2">
             <use href="./images/icons.svg#activities-paws-2"></use>
           </svg>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer" id="footer">
+    <footer class="footer" id="footer">
       <div class="container footer__container">
-        <h2 class="title">Контакти, реквізити</h2>
+        <h2 class="title" data-lang="footer.title">Контакти, реквізити</h2>
+
         <div class="footer__content">
           <address class="footer__contacts">
             <ul class="footer__contacts-list">
@@ -647,15 +811,26 @@
                 <svg class="footer__contacts-icon">
                   <use href="./images/icons.svg#location"></use>
                 </svg>
-                <span>м. Жовті Води</span>
+
+                <span class="footer__contacts-text" data-lang="footer.location">
+                  м. Жовті Води
+                </span>
               </li>
+
               <li class="footer__contacts-item">
                 <svg class="footer__contacts-icon">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
-                <span>з 09:00 до 15:00 щоденно</span>
+
+                <span
+                  class="footer__contacts-text"
+                  data-lang="footer.workingHours"
+                >
+                  з 09:00 до 15:00 щоденно
+                </span>
               </li>
             </ul>
+
             <ul class="footer__socials">
               <li>
                 <a
@@ -669,6 +844,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a
                   class="footer__socials-link"
@@ -681,6 +857,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a
                   class="footer__socials-link"
@@ -695,33 +872,44 @@
               </li>
             </ul>
           </address>
+
           <div class="footer__payment">
             <img
               class="footer__mono-img"
               src="./images/monobank.jpg"
               srcset="./images/monobank@2x.jpg 2x"
               alt="Логотип Монобанку"
+              data-lang-alt="footer.monobank.alt"
             />
-            <p class="footer__card-wrapper">
+
+            <div class="footer__card-wrapper">
               <button
                 class="footer__card-number"
                 type="button"
                 data-card="5375411219308694"
+                data-tooltip="Скопіювати"
+                data-lang-tooltip="footer.card.tooltip"
               >
                 5375 4112 1930 8694
               </button>
-            </p>
-            <a
-              class="footer__jar-link link"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Тиць на банку
-            </a>
+
+              <a
+                class="footer__jar-link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-lang="footer.jar"
+              >
+                Тиць на банку
+              </a>
+            </div>
           </div>
+
           <form class="footer__form">
-            <h3 class="footer__form-title">Маєте питання?</h3>
+            <h3 class="footer__form-title" data-lang="footer.form.title">
+              Маєте питання?
+            </h3>
+
             <label class="footer__field">
               <input
                 class="footer__input input"
@@ -730,7 +918,10 @@
                 placeholder=" "
                 required
               />
-              <span class="footer__label-text">Імʼя</span>
+
+              <span class="footer__label-text" data-lang="footer.form.name">
+                Імʼя
+              </span>
             </label>
 
             <label class="footer__field footer__field--phone">
@@ -744,34 +935,53 @@
                 inputmode="numeric"
                 required
               />
-              <span class="footer__label-text">Номер телефону</span>
+
+              <span class="footer__label-text" data-lang="footer.form.phone">
+                Номер телефону
+              </span>
+
               <span class="footer__phone-prefix">+380 </span>
             </label>
 
             <label class="footer__field">
-              <textarea
-                class="footer__textarea input"
-                name="question"
-                placeholder=" "
-                maxlength="500"
-                required
-              ></textarea>
-              <span class="footer__label-text">Питання</span>
+              <span class="footer__textarea-wrapper">
+                <textarea
+                  class="footer__textarea"
+                  name="question"
+                  placeholder=" "
+                  maxlength="450"
+                  required
+                ></textarea>
+              </span>
+
+              <span
+                class="footer__label-text footer__label-textarea"
+                data-lang="footer.form.question"
+              >
+                Питання
+              </span>
             </label>
 
             <button class="footer__submit-btn" type="submit">
-              <span class="footer__submit-btn-text">Надіслати</span
-              ><svg class="footer__submit-btn-icon">
+              <span
+                class="footer__submit-btn-text"
+                data-lang="footer.form.submit"
+              >
+                Надіслати
+              </span>
+
+              <svg class="footer__submit-btn-icon">
                 <use href="./images/icons.svg#submit-paw"></use>
               </svg>
             </button>
           </form>
         </div>
+
         <svg class="footer__paws-icon">
           <use href="./images/icons.svg#footer-paws"></use>
         </svg>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
@@ -779,56 +989,82 @@
             <use href="./images/icons.svg#close-button"></use>
           </svg>
         </button>
-        <h2 class="modal__title">Надіслати донат</h2>
+
+        <h2 class="modal__title" data-lang="modal.title">Надіслати донат</h2>
+
         <img
           class="modal__mono-img"
           src="./images/monobank.jpg"
           srcset="./images/monobank@2x.jpg 2x"
           alt="Логотип Монобанку"
+          data-lang-alt="footer.monobank.alt"
         />
+
         <p class="modal__card-wrapper">
           <button
             class="modal__card-number"
             type="button"
             data-card="5375411219308694"
+            data-tooltip="Скопіювати"
+            data-lang-tooltip="footer.card.tooltip"
           >
             5375 4112 1930 8694
           </button>
         </p>
+
         <a
           class="modal__jar-link link"
           href="#"
           target="_blank"
           rel="noopener noreferrer"
+          data-lang="footer.jar"
         >
           Тиць на банку
         </a>
+
+        <p class="modal__comment" data-lang="modal.comment">
+          *в коментарі вкажіть, для якої тваринки
+        </p>
+
         <div class="modal__bubble modal__bubble--thanks">
-          <span class="modal__bubble-text--thanks"> Дякую за твій донат </span>
+          <span class="modal__bubble-text--thanks" data-lang="modal.thanks">
+            Дякую за твій донат
+          </span>
         </div>
+
         <div class="modal__bubble modal__bubble--karma">
-          <span class="modal__bubble-text--karma"> Плюсик тобі в карму </span>
+          <span class="modal__bubble-text--karma" data-lang="modal.karma">
+            Плюсик тобі в карму
+          </span>
         </div>
+
         <svg class="modal__parrot-icon modal__icon">
           <use href="./images/svg/donat-parrot.svg"></use>
         </svg>
+
         <svg class="modal__dog-icon modal__icon">
           <use href="./images/icons.svg#donat-dog"></use>
         </svg>
+
         <svg class="modal__cat-icon modal__icon">
           <use href="./images/icons.svg#donat-cat"></use>
         </svg>
+
         <svg class="modal__fish-icon modal__icon">
           <use href="./images/icons.svg#donat-fish"></use>
         </svg>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/translations.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/activity-card.js"></script>
     <script src="./js/buttons.js"></script>
     <script src="./js/help-cards.js"></script>
     <script src="./js/team-slider.js"></script>
+    <script src="./js/activities-slider.js"></script>
+    <script src="./js/bank-card.js"></script>
+    <script src="./js/inputs.js"></script>
   </body>
 </html>

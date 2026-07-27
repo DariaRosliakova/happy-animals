@@ -5,8 +5,12 @@
   padding: 0;
   perspective: 1000px;
   border: 2px solid #fbfff7;
-  border-radius: 30px;
+  border-radius: 20px;
   cursor: pointer;
+  @media screen and (min-width: $bp-tablet) {
+    border-radius: 30px;
+  }
+
   &__inner {
     position: relative;
     display: block;
@@ -20,16 +24,22 @@
     position: absolute;
     inset: 0;
     display: flex;
-    border-radius: 30px;
+    border-radius: 20px;
     background: var(--card-bg-cl);
     backface-visibility: hidden;
+    @media screen and (min-width: $bp-tablet) {
+      border-radius: 30px;
+    }
   }
   &__front {
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.3;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+    }
   }
   &__animation {
     align-self: center;
@@ -39,26 +49,38 @@
     align-items: center;
     align-self: stretch;
     text-align: left;
-    padding: 17px 6px;
-    width: 276px;
-    height: 103px;
+    padding: 4px;
+    width: 156px;
+    height: 60px;
     background: var(--input-bg-cl);
     border-radius: 0px 5px 5px 0px;
+    @media screen and (min-width: $bp-tablet) {
+      width: 276px;
+      height: 103px;
+      padding: 17px 6px;
+    }
   }
-  .activities-section__item:nth-child(even) &__text {
-    padding-left: 20px;
+  .activities-section__slide:nth-child(even) &__text {
     align-self: flex-end;
     border-radius: 5px 0 0 5px;
+    @media screen and (min-width: $bp-tablet) {
+      padding-left: 20px;
+    }
   }
   &__back {
-    padding-top: 32px;
+    padding: 12px 0px;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 8px;
     overflow: hidden;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 1.3;
+    @media screen and (min-width: $bp-tablet) {
+      padding-top: 32px;
+      font-size: 18px;
+    }
   }
   &.is-flipped .activity-card__inner {
     transform: rotateY(180deg);
@@ -66,8 +88,6 @@
 }
 .activity-card__animation {
   position: relative;
-  width: 180px;
-  height: 150px;
 }
 
 .activity-card__img {
@@ -110,16 +130,33 @@
     opacity: 0;
   }
 }
-.activity-card__back {
-  align-items: center;
+.activities-section__slide:nth-child(1) .activity-card__animation {
+  width: 147px;
+  height: 110px;
+  @media screen and (min-width: $bp-tablet) {
+    width: 212px;
+    height: 152px;
+  }
 }
-.activities-section__item:nth-child(1) .activity-card__animation {
-  width: 212px;
-  height: 152px;
+.activities-section__slide:nth-child(1) .activity-card__back {
+  gap: 14px;
+  @media screen and (min-width: $bp-tablet) {
+    gap: 8px;
+  }
 }
-
-.activities-section__item:nth-child(2) .activity-card__animation,
-.activities-section__item:nth-child(3) .activity-card__animation {
-  width: 122px;
-  height: 152px;
+.activities-section__slide:nth-child(2) .activity-card__animation {
+  width: 90px;
+  height: 115px;
+  @media screen and (min-width: $bp-tablet) {
+    width: 122px;
+    height: 152px;
+  }
+}
+.activities-section__slide:nth-child(3) .activity-card__animation {
+  width: 100px;
+  height: 116px;
+  @media screen and (min-width: $bp-tablet) {
+    width: 122px;
+    height: 152px;
+  }
 }
